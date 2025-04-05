@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Outfit";
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    padding: 1.5rem;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__img{
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+}
+.main{
+    background-color: hsl(217, 55%, 10%);
+    border-style: solid;
+    border-width: 0 16px 40px 16px;
+    border-color: transparent hsl(217, 55%, 10%) hsl(217, 55%, 10%) hsl(217, 55%, 10%);
+    border-radius: 40px;
+}
+.main__container{
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 350px;
+}
+.main__image-container{
+    position: relative;
+}
+.main__view-icon{
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 42%;
+}
+.main__image-container:hover .main__view-icon{
+    opacity: 1;
+}
+.main__image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: hsla(178, 100%, 50%, 0.418);
+    opacity: 0;
+}
+  
+  .main__image-container:hover::after {
+    opacity: 1;
+  }
+.main__h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-block: 1.75rem 1.5rem;
+}
+.main__h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.main__description{
+    color: hsl(215, 51%, 70%);
+}
+.main div{
+    display: flex;
+    align-items: center;
+}
+.main__price{
+    justify-content: space-between;
+    padding-block: 1rem;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.main__eth p{
+    color: hsl(178, 100%, 50%);
+    margin-inline-start: .5rem;
+    font-weight: 500;
+}
+.main__days p{
+    color: hsl(215, 51%, 70%);
+    margin-inline-start: .5rem;
+}
+.main__publisher{
+    margin-block-start: 1rem;
+    color: hsl(215, 51%, 70%);
+}
+.main__publisher img{
+    max-width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-inline-end: 1rem;
+}
+.main__publisher span{
+    color: white;
+}
+.main__publisher span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
