@@ -62,7 +62,7 @@ body{
     opacity: 1;
   }
 .main__h1{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     margin-block: 1.75rem 1.5rem;
 }
@@ -71,6 +71,8 @@ body{
     cursor: pointer;
 }
 .main__description{
+    font-size: 1.125rem;
+    line-height: 1.5;
     color: hsl(215, 51%, 70%);
 }
 .main div{
